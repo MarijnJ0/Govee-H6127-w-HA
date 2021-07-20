@@ -1,0 +1,95 @@
+test_scrip_govee:
+  alias: Govee Led on
+  sequence:
+  - service: shell_command.govee_led_on
+  mode: single
+govee_led_off:
+  alias: Govee led off
+  sequence:
+  - service: shell_command.govee_led_off
+  mode: single
+govee_led_music_energetic:
+  alias: Govee led music energetic
+  sequence:
+  - service: shell_command.govee_led_music_energetic
+  mode: single
+govee_led_music_spectrum_blue:
+  alias: Govee led music spectrum blue
+  sequence:
+  - service: shell_command.govee_led_music_spectrum_blue
+  mode: single
+govee_led_music_spectrum_red:
+  alias: Govee led music spectrum red
+  sequence:
+  - service: shell_command.govee_led_music_spectrum_red
+  mode: single
+govee_led_music_rolling_blue:
+  alias: Govee led music rolling blue
+  sequence:
+  - service: shell_command.govee_led_music_rolling_blue
+  mode: single
+govee_led_music_rolling_red:
+  alias: Govee led music rolling red
+  sequence:
+  - service: shell_command.govee_led_music_rolling_red
+  mode: single
+govee_led_music_rhythm:
+  alias: Govee led music rhythm
+  sequence:
+  - service: shell_command.govee_led_music_rhythm
+  mode: single
+govee_led_red:
+  alias: Govee led red
+  sequence:
+  - service: shell_command.govee_led_red
+  mode: single
+govee_led_green:
+  alias: Govee led green
+  sequence:
+  - service: shell_command.govee_led_green
+  mode: single
+govee_led_blue:
+  alias: Govee led blue
+  sequence:
+  - service: shell_command.govee_led_blue
+  mode: single
+govee_led_effect_sunrise:
+  alias: Govee led effect sunrise
+  sequence:
+  - service: shell_command.govee_led_effect_sunrise
+  mode: single
+govee_led_effect_sunset:
+  alias: Govee led effect sunset
+  sequence:
+  - service: shell_command.govee_led_effect_sunset
+  mode: single
+govee_led_effect_snowflake:
+  alias: Govee led effect snowflake
+  sequence:
+  - service: shell_command.govee_led_effect_snowflake
+  mode: single
+govee_led_effect_romantic:
+  alias: Govee led effect romantic
+  sequence:
+  - service: shell_command.govee_led_effect_romantic
+  mode: single
+govee_led_effect_candlelight:
+  alias: Govee led effect candlelight
+  sequence:
+  - service: shell_command.govee_led_effect_candlelight
+  mode: single
+govee_led_effect_movie:
+  alias: Govee led effect movie
+  sequence:
+  - service: shell_command.govee_led_effect_movie
+  mode: single
+govee_led_effect_dating:
+  alias: Govee led effect dating
+  sequence:
+  - service: shell_command.govee_led_effect_dating
+  mode: single
+govee_led_effect_blinking:
+  alias: Govee led effect blinking
+  sequence:
+  - service: shell_command.govee_led_effect_blinking
+  mode: single
