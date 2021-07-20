@@ -1,0 +1,48 @@
+input_select:
+  music_effects:
+    name: Govee music effects
+    options:
+      - Energetic
+      - Spectrum blue
+      - Spectrum red
+      - Rolling blue
+      - Rolling red
+      - Rhythm
+    icon: mdi:music-circle-outline
+  effects:
+    name: Govee effect
+    options:
+      - Blinking
+      - Candlelight
+      - Dating
+      - Movie
+      - Romantic
+      - Snowflake
+      - Sunrise
+      - Sunset
+    icon: mdi:star-circle-outline
+    
+shell_command:
+  govee_led_on: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305010000000000000000000000000000000037 && break || sleep 0.5; done'
+  govee_led_off: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3301000000000000000000000000000000000032 && break || sleep 0.5; done'
+  govee_led_red: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 330502ff000000ff8912000000000000000000af && break || sleep 0.5; done'
+  govee_led_green: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 33050200ff0000ff8912000000000000000000af && break || sleep 0.5; done'
+  govee_led_blue: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305020000ff00ff8912000000000000000000af && break || sleep 0.5; done'
+  govee_led_music_energetic: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305010000000000000000000000000000000037 && break || sleep 0.5; done'
+  govee_led_music_spectrum_red: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305010100ff00000000000000000000000000c9 && break || sleep 0.5; done'
+  govee_led_music_spectrum_blue: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 33050101000000ff0000000000000000000000c9 && break || sleep 0.5; done'
+  govee_led_music_rolling_red: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305010200ff00000000000000000000000000ca && break || sleep 0.5; done'
+  govee_led_music_rolling_blue: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 33050102000000ff0000000000000000000000ca && break || sleep 0.5; done'
+  govee_led_music_rhythm: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305010300000000000000000000000000000034 && break || sleep 0.5; done'
+  govee_led_gradient_on: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3314010000000000000000000000000000000026 && break || sleep 0.5; done'
+  govee_led_gradient_off: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3314000000000000000000000000000000000027 && break || sleep 0.5; done'
+  govee_led_brightness_100: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3304fe00000000000000000000000000000000c9 && break || sleep 0.5; done'
+  govee_led_effect_sunrise: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040000000000000000000000000000000032 && break || sleep 0.5; done'  
+  govee_led_effect_sunset: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040100000000000000000000000000000033 && break || sleep 0.5; done'  
+  govee_led_effect_movie: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040400000000000000000000000000000036 && break || sleep 0.5; done'  
+  govee_led_effect_dating: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040500000000000000000000000000000037 && break || sleep 0.5; done'  
+  govee_led_effect_romantic: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040700000000000000000000000000000035 && break || sleep 0.5; done'  
+  govee_led_effect_blinking: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 330504080000000000000000000000000000003a && break || sleep 0.5; done'  
+  govee_led_effect_candlelight: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 330504090000000000000000000000000000003b && break || sleep 0.5; done'  
+  govee_led_effect_snowflake: bash -c 'for i in {1..5}; do gatttool --char-write-req -b A4:C1:38:00:7C:E2 -a 0x0015 -n 3305040f0000000000000000000000000000003d && break || sleep 0.5; done'  
+  
