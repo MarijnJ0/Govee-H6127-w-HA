@@ -1,5 +1,6 @@
 # Govee H6127 w/ HA
 This project is based on the following page: https://github.com/BeauJBurroughs/Govee-H6127-Reverse-Engineering, my main goal was to integrate my ble led strip into HA.
+I used the 'custom:button-card' to show the devices state (on/ off).
 
 ![image](https://user-images.githubusercontent.com/79994912/126362530-12b2ba39-12b7-4a47-be31-951d74842bc5.png)
 
