@@ -7,3 +7,9 @@ I used the 'custom:button-card' to show the devices state (on/ off).
 Since I'm not very experienced in coding this code will probably not be the most optimal solution, however it works. For the dropdown menus I used an input_selector (see configuration.yaml) as well as a Node-Red flow, which checks for any updates off the input_selector. When detected it triggers a 'call service' node which triggers a script, which then sends a shell_command.
 
 ![image](https://user-images.githubusercontent.com/79994912/126362501-a80c9b92-0362-4fb0-95da-46adfdfe2f36.png)
+
+To do:
+- Add all effects 
+- Add working brightness slider to ui
+- Add more color options to ui
+- Redesign ui card
