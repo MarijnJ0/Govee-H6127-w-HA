@@ -1,0 +1,38 @@
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        entity: switch.led_govee
+        name: Govee
+        icon: mdi:led-strip-variant
+        color: rgb(28, 128, 199)
+        state:
+          - value: 'off'
+            color: rgb(255, 0, 0)
+  - type: entities
+    entities:
+      - entity: input_select.music_effects
+      - entity: input_select.effects
+      - entity: switch.led_govee_gradient
+        icon: mdi:blur-linear
+  - type: horizontal-stack
+    cards:
+      - type: button
+        entity: script.govee_led_red
+        icon: mdi:alpha-r-circle
+        name: Red
+        tap_action:
+          action: toggle
+      - type: button
+        entity: script.govee_led_green
+        icon: mdi:alpha-g-circle
+        name: Green
+        tap_action:
+          action: toggle
+      - type: button
+        entity: script.govee_led_blue
+        icon: mdi:alpha-b-circle
+        name: Blue
+        tap_action:
+          action: toggle
